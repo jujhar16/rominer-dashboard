@@ -6,16 +6,34 @@
     <body>
         <div id="container">
             <div id="sidebar">
-                <div id="logo_container"></div>
+                <div id="logo_container">
+                    <img alt="logo" src="img/logo.svg" id="sidebar_logo"></img>
+                </div>
+                <img alt="mining status" src="img/pickaxe.svg" class="sidebar_button margin_top_15 margin_bottom_15"></img><br>
+                <img alt="settings" src="img/settings.svg" class="sidebar_button"></img>
             </div>
             <div id="content_container">
                 <p class="heading semibold">Status</p>
-                <div class="banner_container margin_top_15"></div>
+                <div class="banner_container margin_top_15">
+                    <div class="flex-row">
+                        <div class="padding_15">
+                            <p class="subheading">PROFITABILITY</p>
+                            <p>
+                                <span class="important_value semibold margin_right_5">≈ 42.55</span><span class="semibold important">ROBUX</span><span class="subheading">/24h</span>
+                            </p>
+                        </div>
+                        <div class="padding_15 flex2 banner_separated">
+                            <p class="subheading">WITHDRAW PROGRESS</p>
+                        </div>
+                    </div>
+                </div>
 
                 <p class="heading semibold margin_top_45">Recent Rewards</p>
-                <div class="banner_container top_bun margin_top_15"></div>
+                <div class="banner_container top_bun margin_top_15 odd"></div>
                 <div class="banner_container filling margin_top_15"></div>
-                <div class="banner_container bottom_bun margin_top_15"></div>
+                <div class="banner_container filling margin_top_15 odd"></div>
+                <div class="banner_container filling margin_top_15"></div>
+                <div class="banner_container bottom_bun margin_top_15 odd"></div>
             </div>
         </div>
     </body>
