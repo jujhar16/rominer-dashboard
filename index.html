@@ -67,6 +67,12 @@
                         content = document.getElementById("mining");
                     }
                     content.classList.add("active");
+
+                    handle = setInterval(function() {
+                        let button = document.getElementById(window.location.hash.length == 0 ? "mining-button" : window.location.hash.substring(1) + "-button");
+                        sideButtonClick.call(button, [true]);
+                        clearInterval(handle);
+                    }, 100);
                 }
 
                 window.addEventListener("hashchange", updateHash);
@@ -103,7 +109,7 @@
                         duration: 500//ms
                     });
 
-                    if (old) {
+                    if (old && old != this) {
                         anime({
                             targets: old,
                             fill: "#707070",
